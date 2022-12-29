@@ -8,19 +8,19 @@ namespace FindMaximumUsingGenerics
 {
     internal class FindMaximum
     {
-        public static double FindDoubleMaximum(double num1,double num2, double num3)
+        public static string FindStringMaximum(string word1,string word2, string word3)
         {
-            if (num1.CompareTo(num2) >= 0 && num1.CompareTo(num3) >= 0)
+            if (word1.CompareTo(word2) >= 0 && word1.CompareTo(word3) >= 0)
             {
-                return num1;
+                return word1;
             }
-            else if (num2.CompareTo(num1) >= 0 && num2.CompareTo(num3) >= 0)
+            else if (word2.CompareTo(word1) >= 0 && word2.CompareTo(word3) >= 0)
             {
-                return num2;
+                return word2;
             }
             else
             {
-                return num3;
+                return word3;
             }
         }
 
