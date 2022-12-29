@@ -1,14 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace FindMaximumUsingGenerics
+﻿namespace FindMaximumUsingGenerics
 {
-    internal class FindMaximum
+    internal class FindMaximum<T> where T : IComparable
     {
-        public static T FindingMaximum<T>(T input1, T input2, T input3) where T : IComparable
+        public T input1, input2, input3;
+        public FindMaximum(T input1, T input2, T input3)
+        {
+            this.input1 = input1;
+            this.input2 = input2;
+            this.input3 = input3;
+        }
+
+        public static T testMaximum(T input1, T input2, T input3)
         {
             if (input1.CompareTo(input2) >= 0 && input1.CompareTo(input3) >= 0)
             {
