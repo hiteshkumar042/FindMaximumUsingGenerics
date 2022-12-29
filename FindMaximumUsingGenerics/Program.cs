@@ -5,16 +5,16 @@
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to Find Maximum Using Generics!");
-            //UC1 - Maximum int Number
+            //UC2 - Maximum Float Number
             //Test Case 1 - Max Number at first position and return same. 
-            int max1stInt = FindMaximum.FindIntMaximum(32,18,11);
-            Console.WriteLine("Maximum Number for 1st test Case is : " + max1stInt);
+            double max1stDouble = FindMaximum.FindDoubleMaximum(55.85,42.45,23.25);
+            Console.WriteLine("Maximum Number for 1st test Case is : " + max1stDouble);
             //Test Case 2 - Max Number at Second position and return same. 
-            int max2ndInt = FindMaximum.FindIntMaximum(18, 32, 11);
-            Console.WriteLine("Maximum Number for 2nd test Case is : " + max2ndInt);
+            double max2ndDouble = FindMaximum.FindDoubleMaximum(42.45, 55.85, 23.25);
+            Console.WriteLine("Maximum Number for 2nd test Case is : " + max2ndDouble);
             //Test Case 3 - Max Number at Third position and return same. 
-            int max3rdInt = FindMaximum.FindIntMaximum(18, 11, 32);
-            Console.WriteLine("Maximum Number for 3rd test Case is : " + max3rdInt);
+            double max3rdDouble = FindMaximum.FindDoubleMaximum(23.25, 42.45, 55.85);
+            Console.WriteLine("Maximum Number for 3rd test Case is : " + max3rdDouble);
         }
     }
 }
